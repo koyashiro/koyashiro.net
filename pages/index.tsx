@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <meta name="description" content="koyashiro's web site." />
       </Head>
 
-      <div className="container mx-auto my-4">
+      <div className="container max-w-2xl mx-auto my-4">
         <Header />
         <Avatar width={200} height={200} />
         <Languages className="mt-6" />
