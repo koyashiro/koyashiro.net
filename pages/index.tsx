@@ -1,6 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import Certifications from "../components/Certifications";
+import Languages from "../components/Languages";
+import Links from "../components/Links";
+
 const Home: NextPage = () => {
   return (
     <>
@@ -9,8 +13,8 @@ const Home: NextPage = () => {
         <meta name="description" content="koyashiro's web site." />
       </Head>
 
-      <div>
-        <h1>koyashi.ro</h1>
+      <div className="container mx-auto my-4">
+        <h1 className="font-bold text-3xl">koyashi.ro</h1>
 
         <img
           width={200}
@@ -19,39 +23,16 @@ const Home: NextPage = () => {
           alt="icon"
         />
 
-        <div>
-          <h2>Languages</h2>
-
-          <ul>
-            <li>TypeScript</li>
-            <li>Rust</li>
-            <li>Go</li>
-            <li>C#</li>
-          </ul>
+        <div className="mt-3">
+          <Languages />
         </div>
 
-        <div>
-          <h2>Links</h2>
-
-          <ul>
-            <li>
-              GitHub: <a href="https://github.com/koyashiro">@koyashiro</a>
-            </li>
-            <li>
-              Twitter: <a href="https://twitter.com/koyashiro">@koyashiro</a>
-            </li>
-          </ul>
+        <div className="mt-3">
+          <Links />
         </div>
 
-        <div>
-          <h2>Certifications</h2>
-
-          <ul>
-            <li>情報処理技術者試験</li>
-            <li>MTA: データベースの基本事項 (98-364)</li>
-            <li>AWS Certified Cloud Practitioner</li>
-            <li>AWS Certified Solutions Architect - Associate</li>
-          </ul>
+        <div className="mt-3">
+          <Certifications />
         </div>
       </div>
     </>
