@@ -9,8 +9,44 @@ const Home: NextPage = () => {
         <meta name="description" content="koyashiro's web site." />
       </Head>
 
-      <h1>koyashi.ro</h1>
-      <a href="https://github.com/koyashiro">GitHub</a>
+      <div>
+        <h1>koyashi.ro</h1>
+
+        <div>
+          <h2>Languages</h2>
+
+          <ul>
+            <li>TypeScript</li>
+            <li>Rust</li>
+            <li>Go</li>
+            <li>C#</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Links</h2>
+
+          <ul>
+            <li>
+              GitHub: <a href="https://github.com/koyashiro">@koyashiro</a>
+            </li>
+            <li>
+              Twitter: <a href="https://twitter.com/koyashiro">@koyashiro</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Certifications</h2>
+
+          <ul>
+            <li>情報処理技術者試験</li>
+            <li>MTA: データベースの基本事項 (98-364)</li>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>AWS Certified Solutions Architect - Associate</li>
+          </ul>
+        </div>
+      </div>
     </>
   );
 };
