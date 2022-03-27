@@ -19,9 +19,9 @@ const Links: FC = () => {
 
   return (
     <>
-      <h2 className="font-bold text-xl">Links</h2>
+      <h2>Links</h2>
 
-      <ul className="list-disc mt-1 ml-8">
+      <ul>
         {links.map((l) => (
           <li key={l.kind}>
             <div className="flex">

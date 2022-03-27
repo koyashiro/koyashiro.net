@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="container mx-auto my-4">
-        <h1 className="font-bold text-3xl">koyashi.ro</h1>
+        <h1>koyashi.ro</h1>
 
         <img
           width={200}

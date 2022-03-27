@@ -5,9 +5,9 @@ const Languages: FC = () => {
 
   return (
     <>
-      <h2 className="font-bold text-xl">Languages</h2>
+      <h2>Languages</h2>
 
-      <ul className="list-disc mt-1 ml-8">
+      <ul>
         {languages.map((l, i) => (
           <li key={i}>{l}</li>
         ))}

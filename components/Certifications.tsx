@@ -10,9 +10,9 @@ const Certifications: FC = () => {
 
   return (
     <>
-      <h2 className="font-bold text-xl">Certifications</h2>
+      <h2>Certifications</h2>
 
-      <ul className="list-disc mt-1 ml-8">
+      <ul>
         {certifications.map((l, i) => (
           <li key={i}>{l}</li>
         ))}
