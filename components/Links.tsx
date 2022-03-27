@@ -33,12 +33,7 @@ const Links: FC = () => {
               </div>
               <div className="ml-1">{l.kind}:</div>
               <div className="ml-1">
-                <a
-                  className="underline"
-                  href={l.url}
-                  target="_balnk"
-                  rel="noopener noreferrer"
-                >
+                <a href={l.url} target="_balnk" rel="noopener noreferrer">
                   @{l.username}
                 </a>
               </div>

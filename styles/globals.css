@@ -13,3 +13,7 @@ h2 {
 ul {
   @apply list-disc mt-1 ml-8;
 }
+
+a {
+  @apply font-semibold underline;
+}
