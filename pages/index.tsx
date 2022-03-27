@@ -12,6 +12,13 @@ const Home: NextPage = () => {
       <div>
         <h1>koyashi.ro</h1>
 
+        <img
+          width={200}
+          height={200}
+          src="https://image.koyashi.ro/koyashiro.png"
+          alt="icon"
+        />
+
         <div>
           <h2>Languages</h2>
 
