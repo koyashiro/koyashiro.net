@@ -1,17 +1,17 @@
 import { FC } from "react";
-import { SiGithub, SiTwitter } from "react-icons/si";
+import { VscGithubInverted, VscLink, VscTwitter } from "react-icons/vsc";
 
 const Links: FC = () => {
   const links = [
     {
       kind: "GitHub",
-      icon: SiGithub,
+      icon: VscGithubInverted,
       username: "koyashiro",
       url: "https://github.com/koyashiro",
     },
     {
       kind: "Twitter",
-      icon: SiTwitter,
+      icon: VscTwitter,
       username: "koyashiro",
       url: "https://twitter.com/koyashiro",
     },
@@ -19,9 +19,12 @@ const Links: FC = () => {
 
   return (
     <>
-      <h2>Links</h2>
+      <h2>
+        <VscLink />
+        <span className="ml-2">Links</span>
+      </h2>
 
-      <ul>
+      <ul className="mt-2">
         {links.map((l) => (
           <li key={l.kind}>
             <div className="flex">

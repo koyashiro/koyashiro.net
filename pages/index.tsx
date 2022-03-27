@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="container mx-auto my-4">
-        <h1>koyashi.ro</h1>
+        <h1>🦊koyashi.ro</h1>
 
         <img
           width={200}
@@ -23,15 +23,15 @@ const Home: NextPage = () => {
           alt="icon"
         />
 
-        <div className="mt-3">
+        <div className="mt-6">
           <Languages />
         </div>
 
-        <div className="mt-3">
+        <div className="mt-6">
           <Links />
         </div>
 
-        <div className="mt-3">
+        <div className="mt-6">
           <Certifications />
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { VscCheck } from "react-icons/vsc";
 
 const Certifications: FC = () => {
   const certifications = [
@@ -10,9 +11,12 @@ const Certifications: FC = () => {
 
   return (
     <>
-      <h2>Certifications</h2>
+      <h2>
+        <VscCheck />
+        <span className="ml-2">Certifications</span>
+      </h2>
 
-      <ul>
+      <ul className="mt-2">
         {certifications.map((l, i) => (
           <li key={i}>{l}</li>
         ))}
