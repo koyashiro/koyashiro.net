@@ -1,11 +1,13 @@
-import { FC } from "react";
+import { ComponentProps, FC } from "react";
 import { VscFileCode } from "react-icons/vsc";
 
-const Languages: FC = () => {
+type Props = ComponentProps<"div">;
+
+const Languages: FC<Props> = (props) => {
   const languages = ["TypeScript", "Rust", "Go", "C#"];
 
   return (
-    <>
+    <div {...props}>
       <h2>
         <VscFileCode />
         <span className="ml-2">Languages</span>
@@ -16,7 +18,7 @@ const Languages: FC = () => {
           <li key={i}>{l}</li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

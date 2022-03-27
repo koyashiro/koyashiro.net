@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+import Avatar from "../components/Avatar";
 import Certifications from "../components/Certifications";
+import Header from "../components/Header";
 import Languages from "../components/Languages";
 import Links from "../components/Links";
 
@@ -14,26 +16,11 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="container mx-auto my-4">
-        <h1>🦊koyashi.ro</h1>
-
-        <img
-          width={200}
-          height={200}
-          src="https://image.koyashi.ro/koyashiro.png"
-          alt="icon"
-        />
-
-        <div className="mt-6">
-          <Languages />
-        </div>
-
-        <div className="mt-6">
-          <Links />
-        </div>
-
-        <div className="mt-6">
-          <Certifications />
-        </div>
+        <Header />
+        <Avatar width={200} height={200} />
+        <Languages className="mt-6" />
+        <Links className="mt-6" />
+        <Certifications className="mt-6" />
       </div>
     </>
   );

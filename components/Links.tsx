@@ -1,7 +1,9 @@
-import { FC } from "react";
+import { ComponentProps, FC } from "react";
 import { VscGithubInverted, VscLink, VscTwitter } from "react-icons/vsc";
 
-const Links: FC = () => {
+type Props = ComponentProps<"div">;
+
+const Links: FC<Props> = (props) => {
   const links = [
     {
       kind: "GitHub",
@@ -18,7 +20,7 @@ const Links: FC = () => {
   ];
 
   return (
-    <>
+    <div {...props}>
       <h2>
         <VscLink />
         <span className="ml-2">Links</span>
@@ -41,7 +43,7 @@ const Links: FC = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
