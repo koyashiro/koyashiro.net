@@ -1,17 +1,23 @@
 import clsx from "clsx";
 import { ComponentProps, FC } from "react";
+import { SiGithub } from "react-icons/si";
 
 type Props = ComponentProps<"footer">;
 
 const Footer: FC<Props> = (props) => {
-  const className = clsx(
-    props.className,
-    "mt-8 border-t-2 border-solid text-center"
-  );
-
   return (
-    <footer {...{ ...props, className }}>
-      <small>&copy; 2022 koyashiro</small>
+    <footer {...props}>
+      <div className="mt-8 pt-1 border-t-2 border-solid flex justify-center">
+        <span className="text-gray-500">&copy; 2022 koyashiro</span>
+        <a
+          href="https://github.com/koyashiro/koyashi.ro"
+          target="_balnk"
+          rel="noopener noreferrer"
+          className="inline-flex items-center"
+        >
+          <SiGithub className="ml-2" />
+        </a>
+      </div>
     </footer>
   );
 };
