@@ -18,8 +18,9 @@ const Profile: FC<Props> = (props) => {
           alt="icon"
         />
       </div>
-      <div className="ml-4 mt-6">
+      <div className="ml-4 mt-3">
         <div className="text-2xl font-bold">koyashiro</div>
+        <div>なんちゃって Web エンジニア</div>
         <div className="flex mt-1">
           <a
             href="https://github.com/koyashiro"
