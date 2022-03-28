@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import Profile from "../components/Profile";
 import Certifications from "../components/Certifications";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Languages from "../components/Languages";
+import Profile from "../components/Profile";
 
 const Home: NextPage = () => {
   return (
@@ -14,11 +15,12 @@ const Home: NextPage = () => {
         <meta name="description" content="koyashiro's web site." />
       </Head>
 
-      <div className="container max-w-4xl mx-auto my-4">
+      <div className="container max-w-3xl mx-auto my-4">
         <Header />
         <Profile className="mt-6" />
         <Languages className="mt-6" />
         <Certifications className="mt-6" />
+        <Footer />
       </div>
     </>
   );

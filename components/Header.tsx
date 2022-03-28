@@ -1,7 +1,13 @@
-import { FC } from "react";
+import { ComponentProps, FC } from "react";
 
-const Header: FC = () => {
-  return <h1>koyashi.ro</h1>;
+type Props = ComponentProps<"header">;
+
+const Header: FC<Props> = (props) => {
+  return (
+    <header {...props}>
+      <h1>koyashi.ro</h1>
+    </header>
+  );
 };
 
 export default Header;
