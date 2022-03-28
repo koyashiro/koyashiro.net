@@ -7,13 +7,13 @@ const Links: FC<Props> = (props) => {
   const links = [
     {
       kind: "GitHub",
-      icon: VscGithubInverted,
+      icon: <VscGithubInverted />,
       username: "koyashiro",
       url: "https://github.com/koyashiro",
     },
     {
       kind: "Twitter",
-      icon: VscTwitter,
+      icon: <VscTwitter color="#1DA1F2" />,
       username: "koyashiro",
       url: "https://twitter.com/koyashiro",
     },
@@ -30,9 +30,7 @@ const Links: FC<Props> = (props) => {
         {links.map((l) => (
           <li key={l.kind}>
             <div className="flex">
-              <div className="inline-flex items-center">
-                <l.icon />
-              </div>
+              <div className="inline-flex items-center">{l.icon}</div>
               <div className="ml-1">{l.kind}:</div>
               <div className="ml-1">
                 <a href={l.url} target="_balnk" rel="noopener noreferrer">
