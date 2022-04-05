@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <meta name="description" content="koyashiro's web site." />
       </Head>
 
-      <div className="container max-w-3xl mx-auto my-4">
+      <div className="container max-w-3xl mx-auto px-4">
         <Header />
 
         <main>
