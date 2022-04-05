@@ -17,9 +17,13 @@ const Home: NextPage = () => {
 
       <div className="container max-w-3xl mx-auto my-4">
         <Header />
-        <Profile className="mt-8" />
-        <Languages className="mt-6" />
-        <Certifications className="mt-6" />
+
+        <main>
+          <Profile className="mt-8" />
+          <Languages className="mt-6" />
+          <Certifications className="mt-6" />
+        </main>
+
         <Footer />
       </div>
     </>
