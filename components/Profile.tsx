@@ -24,6 +24,7 @@ const Profile: FC<Props> = (props) => {
         <div className="flex mt-1">
           <a
             href="https://github.com/koyashiro"
+            aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,6 +33,7 @@ const Profile: FC<Props> = (props) => {
           <a
             className="ml-1"
             href="https://twitter.com/koyashiro"
+            aria-label="Twitter"
             target="_blank"
             rel="noopener noreferrer"
           >
