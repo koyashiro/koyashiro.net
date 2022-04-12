@@ -1,5 +1,5 @@
 import { ComponentProps, FC } from "react";
-import { SiGithub, SiTwitter } from "react-icons/si";
+import { SiGithub, SiKeybase, SiTwitter } from "react-icons/si";
 import clsx from "clsx";
 
 type Props = ComponentProps<"div">;
@@ -38,6 +38,15 @@ const Profile: FC<Props> = (props) => {
             rel="noopener noreferrer"
           >
             <SiTwitter size={20} color="#1DA1F2" />
+          </a>
+          <a
+            className="ml-1"
+            href="https://keybase.io/koyashiro"
+            aria-label="Keybase"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiKeybase size={20} />
           </a>
         </div>
       </div>
