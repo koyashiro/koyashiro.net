@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["image.koyashi.ro"],
+    domains: ["cdn.koyashi.ro"],
   },
 };
 

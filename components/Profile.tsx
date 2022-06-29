@@ -14,7 +14,7 @@ const Profile: FC<Props> = (props) => {
           className="rounded-full border-2"
           width={100}
           height={100}
-          src="https://image.koyashi.ro/koyashiro.png"
+          src="https://cdn.koyashi.ro/koyashiro.png"
           alt="icon"
         />
       </div>
