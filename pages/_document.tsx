@@ -10,9 +10,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
-        <Head>
-          <link rel="icon" href="https://cdn.koyashi.ro/favicon.ico" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
