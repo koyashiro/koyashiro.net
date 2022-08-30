@@ -9,6 +9,7 @@ const Certifications: FC<Props> = (props) => {
     "MTA: データベースの基本事項 (98-364)",
     "AWS Certified Cloud Practitioner",
     "AWS Certified Solutions Architect - Associate",
+    "AWS Certified Developer - Associate",
   ];
 
   return (
