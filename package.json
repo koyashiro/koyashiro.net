@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "lint": "next lint",
     "fmt": "prettier --write ."
   },
   "dependencies": {
     "clsx": "2.1.0",
-    "next": "13.5.6",
+    "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.12.0"
@@ -21,7 +21,7 @@
     "@types/react-dom": "18.2.18",
     "autoprefixer": "10.4.16",
     "eslint": "8.56.0",
-    "eslint-config-next": "13.5.6",
+    "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "9.1.0",
     "postcss": "8.4.32",
     "prettier": "3.1.1",
