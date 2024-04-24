@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>koyashi.ro</title>
+        <title>koyashiro.net</title>
         <meta name="description" content="koyashiro's web site." />
       </Head>
 
