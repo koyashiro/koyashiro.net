@@ -3,7 +3,7 @@ const nextConfig = {
   output: "export",
   reactStrictMode: true,
   images: {
-    domains: ["cdn.koyashi.ro"],
+    domains: ["cdn.koyashiro.net"],
   },
 };
 

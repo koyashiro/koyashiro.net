@@ -1,3 +1,3 @@
-# koyashi.ro
+# koyashiro.net
 
-<https://koyashi.ro/>
+<https://koyashiro.net/>

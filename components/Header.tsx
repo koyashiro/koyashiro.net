@@ -5,7 +5,7 @@ type Props = ComponentProps<"header">;
 const Header: FC<Props> = (props) => {
   return (
     <header {...props}>
-      <h1>koyashi.ro</h1>
+      <h1>koyashiro.net</h1>
     </header>
   );
 };
