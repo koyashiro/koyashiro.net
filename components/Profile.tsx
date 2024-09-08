@@ -1,5 +1,5 @@
 import { ComponentProps, FC } from "react";
-import { SiGithub, SiKeybase, SiTwitter } from "react-icons/si";
+import { SiGithub, SiKeybase, SiX } from "react-icons/si";
 import clsx from "clsx";
 
 type Props = ComponentProps<"div">;
@@ -33,11 +33,11 @@ const Profile: FC<Props> = (props) => {
           <a
             className="ml-1"
             href="https://twitter.com/koyashiro"
-            aria-label="Twitter"
+            aria-label="X"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SiTwitter size={20} color="#1DA1F2" />
+            <SiX size={20} />
           </a>
           <a
             className="ml-1"
