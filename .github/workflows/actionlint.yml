@@ -2,17 +2,19 @@ name: actionlint
 
 on:
   push:
-    paths:
-      - ".github/workflows/**"
+    branches:
+      - main
   pull_request:
-    paths:
-      - ".github/workflows/**"
 
 jobs:
   actionlint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
-      - name: Check workflow files
-        uses: reviewdog/action-actionlint@4f8f9963ca57a41e5fd5b538dd79dbfbd3e0b38a # v1.54.0
+      - name: Install aqua
+        uses: aquaproj/aqua-installer@6ce1f8848ec8e61f14d57bd5d7597057a6dd187c # v3.0.1
+        with:
+          aqua_version: v2.31.0
+      - name: Run actionlint
+        run: actionlint -color
