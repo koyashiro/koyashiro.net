@@ -20,9 +20,7 @@ function App() {
           <div className="text bg-gray-600 pl-[2vw] text-[4vw] text-white">
             koyashiro
           </div>
-          <div className="ml-[2vw] text-[3vw] text-gray-500">
-            koyashiro.net
-          </div>
+          <div className="ml-[2vw] text-[3vw] text-gray-500">koyashiro.net</div>
         </div>
       </div>
 
