@@ -21,7 +21,7 @@ function App() {
             koyashiro
           </div>
           <div className="ml-[2vw] text-[3vw] text-gray-500">
-            contact@koyashiro.net
+            koyashiro.net
           </div>
         </div>
       </div>
