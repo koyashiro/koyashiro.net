@@ -1,34 +1,38 @@
 {
   "name": "koyashiro.net",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "lint": "next lint",
-    "fmt": "prettier --write ."
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "clsx": "2.1.1",
-    "next": "14.2.9",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-icons": "5.3.0"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@types/node": "20.16.5",
+    "@eslint/js": "9.10.0",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react-swc": "3.7.0",
     "autoprefixer": "10.4.20",
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.2.9",
-    "eslint-config-prettier": "9.1.0",
+    "eslint": "9.10.0",
+    "eslint-plugin-react": "7.35.2",
+    "eslint-plugin-react-hooks": "5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "0.4.11",
+    "globals": "15.9.0",
     "postcss": "8.4.45",
     "prettier": "3.3.3",
+    "prettier-plugin-organize-imports": "4.0.0",
+    "prettier-plugin-tailwindcss": "0.6.6",
     "tailwindcss": "3.4.10",
-    "typescript": "5.6.2"
-  },
-  "volta": {
-    "node": "20.17.0"
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.5.0",
+    "vite": "5.4.3"
   }
 }

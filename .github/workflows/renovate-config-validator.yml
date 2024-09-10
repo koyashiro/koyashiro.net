@@ -1,0 +1,16 @@
+name: renovate-config-validator
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  renovate-config-validator:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: Run renovate-config-validator
+        uses: suzuki-shunsuke/github-action-renovate-config-validator@36a15b83e37bf3221dc9c02ff5ffdaefb51ca1cf # v1.1.0
